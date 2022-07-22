@@ -5,8 +5,7 @@ const {chinaUnescoSiteData} = require('../_data/chinaUnescoSiteData')
 // route    GET /api/v1/country
 // access   public
 exports.getAllCountrySite = (req, res, next) => {
-  console.log("getting all country's unesco sites");
-  res.status(200).json({ message: "getting all country's unesco sites" });
+  res.status(200).json({ message: "indicate the country's name in url; e.g. /api/v1/country/china" });
 };
 
 // desc     Get a country's unesco site

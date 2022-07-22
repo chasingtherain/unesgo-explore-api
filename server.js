@@ -11,6 +11,7 @@ connectDB()
 
 // Route files
 const country = require("./routes/country.route");
+const region = require("./routes/region.route");
 
 const app = express();
 
@@ -32,8 +33,7 @@ if(process.env.NODE_ENV === "development") app.use(morgan('dev'))
 
 // mount routers
 app.use("/api/v1/country", country);
-
-app.get("/api/v1/region", controller);
+app.use("/api/v1/region", region);
 
 const PORT = process.env.PORT || 3008;
 

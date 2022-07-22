@@ -6,8 +6,4 @@ router.get("/", getAllCountrySite);
 
 router.get("/china", getChinaSite);
 
-router.get("/name", getCountrySite);
-
-router.post('/name', postCountrySite)
-
 module.exports = router;
