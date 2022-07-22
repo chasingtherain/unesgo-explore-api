@@ -1,8 +1,10 @@
 const express = require("express");
-const { getCountrySite, getAllCountrySite, postCountrySite } = require("../controllers/country.controller");
+const { getChinaSite, getCountrySite, getAllCountrySite, postCountrySite } = require("../controllers/country.controller");
 const router = express.Router();
 
 router.get("/", getAllCountrySite);
+
+router.get("/china", getChinaSite);
 
 router.get("/name", getCountrySite);
 
